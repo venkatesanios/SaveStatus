@@ -1,0 +1,4 @@
+#Wed Nov 29 21:42:33 IST 2023
+base.0=/Users/NSV/Desktop/status_save/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

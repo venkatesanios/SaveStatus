@@ -1,4 +1,7 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
+import 'package:permission_handler/permission_handler.dart';
 
 class HomeStatus extends StatefulWidget {
   @override
@@ -8,10 +11,12 @@ class HomeStatus extends StatefulWidget {
 class _HomeStatusState extends State<HomeStatus> {
   final _formKeydealer = GlobalKey<FormState>();
   String? dropdowninitialValue;
+  final Directory _newPhotoDir = Directory('/storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/.Statuses');
 
   @override
   void initState() {
     super.initState();
+    Permissionget();
   }
 
   @override
@@ -47,7 +52,7 @@ class _HomeStatusState extends State<HomeStatus> {
               children: [
                 buildTab(0),
                 buildTab(13),
-                buildTab(17),
+                buildimage(context),
               ],
             ),
           ),
@@ -59,7 +64,6 @@ class _HomeStatusState extends State<HomeStatus> {
   Widget buildTab(int count) {
     if (count == 0) {
       return Center(child: const Text('Ther are no status available'));
-      
     }
     return Container(
       padding: const EdgeInsets.all(5),
@@ -81,4 +85,94 @@ class _HomeStatusState extends State<HomeStatus> {
       ),
     );
   }
+
+  Permissionget() async {
+    final permissionStatus = await Permission.storage.status;
+    if (permissionStatus.isDenied) {
+      // Here just ask for the permission for the first time
+      await Permission.storage.request();
+
+      // I noticed that sometimes popup won't show after user press deny
+      // so I do the check once again but now go straight to appSettings
+      if (permissionStatus.isDenied) {
+        await openAppSettings();
+      }
+    } else if (permissionStatus.isPermanentlyDenied) {
+      // Here open app settings for user to manually enable permission in case
+      // where permission was permanently denied
+      await openAppSettings();
+    } else {
+      // Do stuff that require permission here
+    }
+  }
+
+  Widget buildimage(BuildContext context)  {
+    // if (!Directory('${_newPhotoDir.path}').existsSync()) {
+    //   return Column(
+    //     mainAxisAlignment: MainAxisAlignment.center,
+    //     children: [
+    //       const Text(
+    //         'Install WhatsApp\n',
+    //         style: TextStyle(fontSize: 18.0),
+    //       ),
+    //       const Text(
+    //         "Your Friend's Status Will Be Available Here",
+    //         style: TextStyle(fontSize: 18.0),
+    //       ),
+    //     ],
+    //   );
+    // } else {
+    final imageList = _newPhotoDir.listSync().map((item) => item.path).where((item) => item.endsWith('.jpg')).toList(growable: false);
+    print('imageList:  $imageList ');
+    if (imageList.length > 0) {
+      return Container(
+          margin: const EdgeInsets.all(8.0),
+          child: GridView.builder(
+            key: PageStorageKey(widget.key),
+            gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(maxCrossAxisExtent: 150),
+            itemCount: imageList.length,
+            itemBuilder: (BuildContext context, int index) {
+              final String imgPath = imageList[index];
+              return Padding(
+                  padding: const EdgeInsets.all(1.0),
+                  child: GestureDetector(
+                    // onTap: () {
+                    //   Navigator.push(
+                    //     context,
+                    //     MaterialPageRoute(
+                    //       builder: (context) => ViewPhotos(
+                    //         imgPath: imgPath,
+                    //       ),
+                    //     ),
+                    //   );
+                    // },
+
+                    //                 Center(
+                    //   child: Image.file(
+                    //     File(widget.imgPath),
+                    //     fit: BoxFit.cover,
+                    //   ),
+                    // ),
+                    child: Image.file(
+                      File(imageList[index]),
+                      fit: BoxFit.cover,
+                      filterQuality: FilterQuality.medium,
+                    ),
+                  ));
+            },
+          ));
+    } else {
+      return Scaffold(
+        body: Center(
+          child: Container(
+              padding: const EdgeInsets.only(bottom: 60.0),
+              child: const Text(
+                'Sorry, No Image Found!',
+                style: TextStyle(fontSize: 18.0),
+              )),
+        ),
+      );
+    }
+  }
 }
+// }
