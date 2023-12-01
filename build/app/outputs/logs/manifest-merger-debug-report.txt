@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 application
-INJECTED from /Users/NSV/Desktop/status_save/android/app/src/main/AndroidManifest.xml:2:5-32:19
+INJECTED from /Users/NSV/Desktop/status_save/android/app/src/main/AndroidManifest.xml:5:5-35:19
 MERGED from [androidx.window:window:1.0.0-beta04] /Users/NSV/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.window:window:1.0.0-beta04] /Users/NSV/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.core:core:1.6.0] /Users/NSV/.gradle/caches/transforms-3/7e9df2ac2213a6bd3cef0f2f27870d79/transformed/core-1.6.0/AndroidManifest.xml:24:5-89
@@ -12,12 +12,13 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/NSV/
 	android:name
 		INJECTED from /Users/NSV/Desktop/status_save/android/app/src/main/AndroidManifest.xml
 manifest
-ADDED from /Users/NSV/Desktop/status_save/android/app/src/main/AndroidManifest.xml:1:1-33:12
-INJECTED from /Users/NSV/Desktop/status_save/android/app/src/main/AndroidManifest.xml:1:1-33:12
-INJECTED from /Users/NSV/Desktop/status_save/android/app/src/main/AndroidManifest.xml:1:1-33:12
-INJECTED from /Users/NSV/Desktop/status_save/android/app/src/main/AndroidManifest.xml:1:1-33:12
-MERGED from /Users/NSV/Desktop/status_save/android/app/src/main/AndroidManifest.xml:1:1-33:12
+ADDED from /Users/NSV/Desktop/status_save/android/app/src/main/AndroidManifest.xml:1:1-37:12
+INJECTED from /Users/NSV/Desktop/status_save/android/app/src/main/AndroidManifest.xml:1:1-37:12
+INJECTED from /Users/NSV/Desktop/status_save/android/app/src/main/AndroidManifest.xml:1:1-37:12
+INJECTED from /Users/NSV/Desktop/status_save/android/app/src/main/AndroidManifest.xml:1:1-37:12
+MERGED from /Users/NSV/Desktop/status_save/android/app/src/main/AndroidManifest.xml:1:1-37:12
 MERGED from [:permission_handler_android] /Users/NSV/Desktop/status_save/build/permission_handler_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:path_provider_android] /Users/NSV/Desktop/status_save/build/path_provider_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/NSV/.gradle/caches/transforms-3/ae81e06d24c799147c26814497a2a305/transformed/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:17:1-23:12
 MERGED from [androidx.window:window:1.0.0-beta04] /Users/NSV/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.fragment:fragment:1.1.0] /Users/NSV/.gradle/caches/transforms-3/75f94412898c7559d34d7edbbeaeb394/transformed/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
@@ -35,29 +36,43 @@ MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/NSV/.gradle/caches/tr
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/NSV/.gradle/caches/transforms-3/47ecd4e588b99ef3b772f04d5aa6c9b7/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/NSV/.gradle/caches/transforms-3/03b9b3b952540ee8cedf6c096276d934/transformed/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/NSV/.gradle/caches/transforms-3/6c0c163cc77ae6c91f9f7dfcd179c29c/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /Users/NSV/Desktop/status_save/android/app/src/debug/AndroidManifest.xml:1:1-10:12
-INJECTED from /Users/NSV/Desktop/status_save/android/app/src/debug/AndroidManifest.xml:1:1-10:12
-INJECTED from /Users/NSV/Desktop/status_save/android/app/src/debug/AndroidManifest.xml:1:1-10:12
+INJECTED from /Users/NSV/Desktop/status_save/android/app/src/debug/AndroidManifest.xml:1:1-13:12
+INJECTED from /Users/NSV/Desktop/status_save/android/app/src/debug/AndroidManifest.xml:1:1-13:12
+INJECTED from /Users/NSV/Desktop/status_save/android/app/src/debug/AndroidManifest.xml:1:1-13:12
 	package
 		INJECTED from /Users/NSV/Desktop/status_save/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/NSV/Desktop/status_save/android/app/src/main/AndroidManifest.xml:1:1-33:12
+		ADDED from /Users/NSV/Desktop/status_save/android/app/src/main/AndroidManifest.xml:1:1-37:12
 		INJECTED from /Users/NSV/Desktop/status_save/android/app/src/debug/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/NSV/Desktop/status_save/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/NSV/Desktop/status_save/android/app/src/main/AndroidManifest.xml:1:1-33:12
+		ADDED from /Users/NSV/Desktop/status_save/android/app/src/main/AndroidManifest.xml:1:1-37:12
 		INJECTED from /Users/NSV/Desktop/status_save/android/app/src/debug/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/NSV/Desktop/status_save/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/NSV/Desktop/status_save/android/app/src/main/AndroidManifest.xml:1:1-33:12
+		ADDED from /Users/NSV/Desktop/status_save/android/app/src/main/AndroidManifest.xml:1:1-37:12
 		INJECTED from /Users/NSV/Desktop/status_save/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/NSV/Desktop/status_save/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/NSV/Desktop/status_save/android/app/src/main/AndroidManifest.xml:2:4-79
+MERGED from /Users/NSV/Desktop/status_save/android/app/src/main/AndroidManifest.xml:2:4-79
+MERGED from /Users/NSV/Desktop/status_save/android/app/src/main/AndroidManifest.xml:2:4-79
+	android:name
+		ADDED from /Users/NSV/Desktop/status_save/android/app/src/main/AndroidManifest.xml:2:21-77
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/NSV/Desktop/status_save/android/app/src/main/AndroidManifest.xml:3:4-78
+MERGED from /Users/NSV/Desktop/status_save/android/app/src/main/AndroidManifest.xml:3:4-78
+MERGED from /Users/NSV/Desktop/status_save/android/app/src/main/AndroidManifest.xml:3:4-78
+	android:name
+		ADDED from /Users/NSV/Desktop/status_save/android/app/src/main/AndroidManifest.xml:3:21-76
 uses-sdk
 INJECTED from /Users/NSV/Desktop/status_save/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/NSV/Desktop/status_save/android/app/src/main/AndroidManifest.xml
 INJECTED from /Users/NSV/Desktop/status_save/android/app/src/main/AndroidManifest.xml
 MERGED from [:permission_handler_android] /Users/NSV/Desktop/status_save/build/permission_handler_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:permission_handler_android] /Users/NSV/Desktop/status_save/build/permission_handler_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:path_provider_android] /Users/NSV/Desktop/status_save/build/path_provider_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:path_provider_android] /Users/NSV/Desktop/status_save/build/path_provider_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/NSV/.gradle/caches/transforms-3/ae81e06d24c799147c26814497a2a305/transformed/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/NSV/.gradle/caches/transforms-3/ae81e06d24c799147c26814497a2a305/transformed/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.window:window:1.0.0-beta04] /Users/NSV/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:20:5-22:41
@@ -100,18 +115,22 @@ INJECTED from /Users/NSV/Desktop/status_save/android/app/src/debug/AndroidManife
 	android:minSdkVersion
 		INJECTED from /Users/NSV/Desktop/status_save/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/NSV/Desktop/status_save/android/app/src/debug/AndroidManifest.xml
-uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/NSV/Desktop/status_save/android/app/src/debug/AndroidManifest.xml:6:5-80
+uses-permission#android.permission.READ_MEDIA_IMAGES
+ADDED from /Users/NSV/Desktop/status_save/android/app/src/debug/AndroidManifest.xml:8:5-75
 	android:name
-		ADDED from /Users/NSV/Desktop/status_save/android/app/src/debug/AndroidManifest.xml:6:22-78
-uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /Users/NSV/Desktop/status_save/android/app/src/debug/AndroidManifest.xml:7:5-79
+		ADDED from /Users/NSV/Desktop/status_save/android/app/src/debug/AndroidManifest.xml:8:22-73
+uses-permission#android.permission.READ_MEDIA_VIDEO
+ADDED from /Users/NSV/Desktop/status_save/android/app/src/debug/AndroidManifest.xml:9:5-74
 	android:name
-		ADDED from /Users/NSV/Desktop/status_save/android/app/src/debug/AndroidManifest.xml:7:22-77
+		ADDED from /Users/NSV/Desktop/status_save/android/app/src/debug/AndroidManifest.xml:9:22-72
+uses-permission#android.permission.READ_MEDIA_AUDIO
+ADDED from /Users/NSV/Desktop/status_save/android/app/src/debug/AndroidManifest.xml:10:5-74
+	android:name
+		ADDED from /Users/NSV/Desktop/status_save/android/app/src/debug/AndroidManifest.xml:10:22-72
 uses-permission#android.permission.INTERNET
-ADDED from /Users/NSV/Desktop/status_save/android/app/src/debug/AndroidManifest.xml:9:5-66
+ADDED from /Users/NSV/Desktop/status_save/android/app/src/debug/AndroidManifest.xml:12:5-66
 	android:name
-		ADDED from /Users/NSV/Desktop/status_save/android/app/src/debug/AndroidManifest.xml:9:22-64
+		ADDED from /Users/NSV/Desktop/status_save/android/app/src/debug/AndroidManifest.xml:12:22-64
 uses-library#androidx.window.extensions
 ADDED from [androidx.window:window:1.0.0-beta04] /Users/NSV/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
 	android:required

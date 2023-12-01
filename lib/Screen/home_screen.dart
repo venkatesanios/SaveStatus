@@ -3,6 +3,8 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:status_save/permission_check.dart';
+import 'package:path_provider/path_provider.dart';
+
 
 class HomeStatus extends StatefulWidget {
   @override
@@ -110,6 +112,24 @@ class _HomeStatusState extends State<HomeStatus> {
       // Do stuff that require permission here
     }
   }
+
+
+
+Future<void> accessFiles() async {
+  Directory? directory;
+  try {
+    directory = await getExternalStorageDirectory();
+    if (directory != null) {
+      // Use directory.path to access the path
+      print('External Storage Directory: ${directory.path}');
+    } else {
+      print('External Storage Directory is null');
+    }
+  } catch (e) {
+    print('Exception accessing directory: $e');
+  }
+}
+
 
   Widget buildimage(BuildContext context)  {
   if (!_newPhotoDir.existsSync()) {

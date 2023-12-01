@@ -10,3 +10,4 @@ com.example.status_save.app-rs-8 /Users/NSV/Desktop/status_save/build/app/genera
 com.example.status_save.app-mergeDebugResources-9 /Users/NSV/Desktop/status_save/build/app/intermediates/incremental/debug/mergeDebugResources/merged.dir
 com.example.status_save.app-mergeDebugResources-10 /Users/NSV/Desktop/status_save/build/app/intermediates/incremental/debug/mergeDebugResources/stripped.dir
 com.example.status_save.app-merged_res-11 /Users/NSV/Desktop/status_save/build/app/intermediates/merged_res/debug
+com.example.status_save.app-packaged_res-12 /Users/NSV/Desktop/status_save/build/permission_handler_android/intermediates/packaged_res/debug

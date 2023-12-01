@@ -1,4 +1,9 @@
 # This is a generated file; do not edit or check into version control.
+path_provider=/Users/NSV/.pub-cache/hosted/pub.dev/path_provider-2.1.1/
+path_provider_android=/Users/NSV/.pub-cache/hosted/pub.dev/path_provider_android-2.2.1/
+path_provider_foundation=/Users/NSV/.pub-cache/hosted/pub.dev/path_provider_foundation-2.3.1/
+path_provider_linux=/Users/NSV/.pub-cache/hosted/pub.dev/path_provider_linux-2.2.1/
+path_provider_windows=/Users/NSV/.pub-cache/hosted/pub.dev/path_provider_windows-2.2.1/
 permission_handler=/Users/NSV/.pub-cache/hosted/pub.dev/permission_handler-11.0.1/
 permission_handler_android=/Users/NSV/.pub-cache/hosted/pub.dev/permission_handler_android-11.1.0/
 permission_handler_apple=/Users/NSV/.pub-cache/hosted/pub.dev/permission_handler_apple-9.1.4/
