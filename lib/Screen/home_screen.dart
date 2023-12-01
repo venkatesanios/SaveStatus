@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
+import 'package:status_save/permission_check.dart';
 
 class HomeStatus extends StatefulWidget {
   @override
@@ -11,12 +12,16 @@ class HomeStatus extends StatefulWidget {
 class _HomeStatusState extends State<HomeStatus> {
   final _formKeydealer = GlobalKey<FormState>();
   String? dropdowninitialValue;
-  final Directory _newPhotoDir = Directory('/storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/.Statuses');
-
+  // final Directory _newPhotoDir = Directory('/storage/emulated/0/Android/WhatsApp/Media/.Statuses');
+  final Directory _newPhotoDir1 = Directory('/storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/.Statuses');
+ final Directory _newPhotoDir =
+      Directory('/storage/emulated/0/WhatsApp/Media/.Statuses');
   @override
   void initState() {
     super.initState();
     Permissionget();
+        var per = PermissionClass();
+    per.checkPermission(context, Permission.accessMediaLocation);
   }
 
   @override
@@ -107,21 +112,19 @@ class _HomeStatusState extends State<HomeStatus> {
   }
 
   Widget buildimage(BuildContext context)  {
-    // if (!Directory('${_newPhotoDir.path}').existsSync()) {
-    //   return Column(
-    //     mainAxisAlignment: MainAxisAlignment.center,
-    //     children: [
-    //       const Text(
-    //         'Install WhatsApp\n',
-    //         style: TextStyle(fontSize: 18.0),
-    //       ),
-    //       const Text(
-    //         "Your Friend's Status Will Be Available Here",
-    //         style: TextStyle(fontSize: 18.0),
-    //       ),
-    //     ],
-    //   );
-    // } else {
+  if (!_newPhotoDir.existsSync()) {
+      return const Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              'Directory not found',
+              style: TextStyle(fontSize: 18.0),
+            ),
+          ],
+        ),
+      );
+    } else {
     final imageList = _newPhotoDir.listSync().map((item) => item.path).where((item) => item.endsWith('.jpg')).toList(growable: false);
     print('imageList:  $imageList ');
     if (imageList.length > 0) {
@@ -175,4 +178,4 @@ class _HomeStatusState extends State<HomeStatus> {
     }
   }
 }
-// }
+}
